@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{>header2}}
+</head>
+<body>
+{{>navbar2}}
+    <div class="container">
+   <div class="row my-7">
+    <div class="col-sm-8 col-md-5 mx-auto">
+        <h1 class="text-center login-title my-5"> Create an account</h1>
+        <p class="text-center fs-6 fw-bold h2 ">STARBUCKS® REWARDS</p>
+        <br>
+        <h6 class="fs-6 h-3" >Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. Get access to mobile ordering, a birthday Reward, and more.</h6>
+        <div class="account-wall">
+    <form action="/register" method="POST" class="form-signup needs-validation" novalidate>
+        <h6 class="fs-6">* indicates required field</h4>
+        <br>
+        <h4 class="fs-5">Personal Information</h4>
+        <br>
+    <div class="form-floating">
+      <input type="text" name="firstname" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="" required style="border-radius: 15px;">
+      <div class="invalid-feedback">
+       ❌ Enter your first name
+    </div>
+      <label for="floatingInputGrid" class="form-label">* First Name</label>
+      <br>
+    </div>
+    <div class="form-floating">
+      <input type="text" name="lastname" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="" required style="border-radius: 15px;">
+      <label for="floatingInputGrid">*Last Name</label>
+      <div class="invalid-feedback">
+       ❌ Enter your last name
+    </div>
+      <br>
+    </div>
+    <br>
+    <h4 class="fs-5">Account Security</h4>
+        <br>
+    <div class="form-floating">
+      <input type="email" name="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="" required style="border-radius: 15px;" >
+      <label for="floatingInputGrid">* Email address</label>
+      <div class="invalid-feedback">
+       ❌ Please enter your email address 
+    </div>
+      <br>
+    </div>
+    <div class="form-floating">
+      <input type="password" name="password"class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="" required style="border-radius: 15px;">
+      <label for="floatingInputGrid">* Password</label>
+      <div class="invalid-feedback"> 
+       ❌ From 8 to 25 characters<br>
+       ❌ At least one number<br>
+       ❌ least one special character such as exclamation point or comma<br>
+       ❌ least one lowercase letter<br>
+       ❌ least one capital letter<br>
+    </div>
+    <br>
+     <p class="fs-6 ">Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</p>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="password" name="confirmpassword" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="" required style="border-radius: 15px;">
+      <label for="floatingInputGrid">* Confirm Password</label>
+      <br>
+    </div>
+    <br>
+    <h4 class=" fs-6 fw-bold h2 ">TERMS OF USE </h4>
+    <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        <p class="fs-6 fw-normal h2">I agree to the 
+Starbucks® Rewards Terms
+opens in new window and the 
+Starbucks Card Terms
+opens in new window and have read the 
+Starbucks Privacy Statement
+opens in new window.</p>
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-lg btn btn-success" type="submit" style= "border-radius: 50px; text-align:center;" value="Register" >Create account</button>
+  </div>
+   </form>
+ </div>
+ </div>
+  </div>
+  </div>
+  <script>
+    (function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+  </script>
+</body>

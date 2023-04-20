@@ -1,0 +1,68 @@
+<nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="/">
+            <img src="img/logo.svg" alt="Starbucks" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Rewards</a>
+          </li>
+          <li>
+            <a href="#">Gift Cards</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="/Map">
+              <img src="img/marker.svg" alt="" />
+              <span>Find a store</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Cart">Cart</a>
+          </li>
+          <button class="btn btn-dark-outline"><a href="/login">Sign in</a></button>
+        <button class="btn btn-dark " style="margin-left: 10px;"><a style="color: #ffff;" href="/register"> Join now </a></button>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Rewards</a>
+        </li>
+        <li>
+          <a href="#">Gift Cards</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline"><a href="/login">Sign in</a></button>
+        <button class="btn btn-dark "><a style="color: #ffff;" href="/register"> Join now </a></button>
+        <div>
+          <a href="#">
+            <img src="img/marker.svg" alt="" />
+            <span><a href="/Map"> Find a store</a></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  <script src="script/script.js"></script>
